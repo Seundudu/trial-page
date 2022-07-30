@@ -1,0 +1,100 @@
+html{
+    background-color: rgb(255, 122, 122);
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts.google.com/specimen/Poppins);
+}
+main{
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    padding: 20%;
+    justify-content: center;
+    font-family: myFirstFont;
+}
+.left{
+    flex-basis: 55%;
+    margin: 2%;
+    color: whitesmoke;
+    padding: 10% 0%;
+}
+.right{
+    padding-right: 3%;
+}
+.head{
+    background-color: rgb(96, 85, 165);
+    padding: 1px;
+    text-align: center;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+.bottom{
+    background-color: white;
+    padding: 10%;
+    border-radius: 5px;
+}
+td{
+    margin-bottom: 3%;
+    padding: 2% 0%;
+}
+input{
+    height: 20px;
+    width: 160%;
+    padding: 2% 0% 2% 10% ;
+    border: 1px solid;
+    border-radius: 5px;
+    mask-border-outset: 100%;
+}
+button{
+    background-color: #38cc8cf8;
+    color: aliceblue;
+    padding: 1%;
+    margin-top: 2%;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border-style: none;
+}
+.terms{
+    color: rgb(255, 122, 122);
+    font-size: 16px;
+}
+@media screen and (max-width: 350px) {
+    main{
+        flex-direction: column;       
+        max-width: 80%;
+        margin: auto;
+        padding: 20%;
+        justify-content: center;
+        font-family: myFirstFont;
+    }        
+    input{
+        height: 20px;
+        width: 150px;
+        padding: 2% 0% 2% 10% ;
+        border: 1px solid;
+        border-radius: 5px;
+        mask-border-outset: 100%;
+    }
+    
+}
+@media screen and (max-width: 1440px) {
+    main{
+        flex-direction: row;
+        max-width: 80%;
+        margin: auto;
+        padding: 20%;
+        justify-content: center;
+        font-family: myFirstFont;
+    } 
+    input{
+        height: 20px;
+        width: 100%;
+        padding: 2% 0% 2% 10% ;
+        border: 1px solid;
+        border-radius: 5px;
+        mask-border-outset: 100%;
+    }
+       
+}
